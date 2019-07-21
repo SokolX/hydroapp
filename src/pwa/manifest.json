@@ -1,6 +1,6 @@
 {
-    "name": "hydrapp",
-    "short_name": "hydrapp",
+    "name": "hydroapp",
+    "short_name": "hydroapp",
     "theme_color": "#3767AD",
     "background_color": "#3767AD",
     "display": "standalone",
