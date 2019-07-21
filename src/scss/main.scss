@@ -12,11 +12,50 @@ html {
 
 body {
   background: $oceanblue;
+  font-family: $robotFont;
+  height: 100vh;
+  min-width: 375px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 280px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-areas: "glass"
+   "add" 
+   "remove";
+  grid-column: 0.5r 0.3fr 0.2fr;
+  grid-gap: 32px;
+
+  &__button {
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 47px;
+    border: none;
+
+    &--add {
+      grid-area: add;
+      background: $white;
+      
+      &:hover {
+        border: $lightblue 2px solid;
+      }
+    }
+
+    &--remove {
+      grid-area: remove;
+      background: $oceanblue;
+      color: $lightgrey;
+      font-size: 14px;
+    }
+    
+  }
+
+  &__glass {
+    grid-area: glass;
+  }
 }

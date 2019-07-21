@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -316,17 +317,51 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #3767AD; }
-
-.main {
+  background: #3767AD;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  min-width: 375px;
+  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+          justify-content: center; }
+
+.main {
+  max-width: 280px;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "glass" "add"  "remove";
+  grid-column: 0.5r 0.3fr 0.2fr;
+  grid-gap: 32px; }
+  .main__button {
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 47px;
+    border: none; }
+    .main__button--add {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: add;
+      background: #FFFFFF; }
+      .main__button--add:hover {
+        border: #2196F3 2px solid; }
+    .main__button--remove {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      grid-area: remove;
+      background: #3767AD;
+      color: #F5E5E7;
+      font-size: 14px; }
+  .main__glass {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: glass; }
 
 /*# sourceMappingURL=main.css.map */
