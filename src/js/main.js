@@ -2,4 +2,4 @@
 
 import moment from 'moment';
 
-console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
+const key = new Date.toISOString().slice(0,10);

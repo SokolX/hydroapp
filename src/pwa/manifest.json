@@ -9,7 +9,7 @@
     "start_url": "/hydrapp/",
     "icons": [
       {
-        "src": "assets/pwa/icons/icon-72x72.png",
+        "src": "assets/pwa/icons/icon-72x72",
         "sizes": "72x72",
         "type": "image/png"
       },

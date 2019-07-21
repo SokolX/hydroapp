@@ -349,7 +349,9 @@ body {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
       grid-area: add;
-      background: #FFFFFF; }
+      background: #FFFFFF;
+      -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 5px 25px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 5px 25px 0 rgba(0, 0, 0, 0.19); }
       .main__button--add:hover {
         border: #2196F3 2px solid; }
     .main__button--remove {

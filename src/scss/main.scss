@@ -40,7 +40,7 @@ body {
     &--add {
       grid-area: add;
       background: $white;
-      
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 5px 25px 0 rgba(0, 0, 0, 0.19);
       &:hover {
         border: $lightblue 2px solid;
       }
