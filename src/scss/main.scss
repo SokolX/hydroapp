@@ -11,6 +11,12 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: $oceanblue;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }

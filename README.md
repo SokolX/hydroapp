@@ -2,7 +2,7 @@
 
 
 
-# How to run local this projecy? 
+# How to run local this project? 
 `npm install -g gulp-cli`
 
 `npm install`
