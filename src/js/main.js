@@ -13,5 +13,3 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-
-const key = new Date.toISOString().slice(0,10);
