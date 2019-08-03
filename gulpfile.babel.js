@@ -1,7 +1,6 @@
 "use strict";
 
 import gulp from "gulp";
-import babel from "gulp-babel";
 import uglify from "gulp-uglify";
 import browserSync from "browser-sync";
 import sass from "gulp-sass";
@@ -33,6 +32,12 @@ gulp.task("html", function() {
     .pipe(
       plumber(errorHandler)
     )
+    .pipe(gulp.dest("./dist/"));
+});
+
+gulp.task("pwa", function() {
+  return gulp
+    .src("./src/pwa/**/*")
     .pipe(gulp.dest("./dist/"));
 });
 
