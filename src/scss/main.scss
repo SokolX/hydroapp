@@ -21,7 +21,7 @@ body {
   justify-content: center;
 }
 
-.main {
+.glass {
   max-width: 280px;
   margin: 0px auto;
   display: grid;
@@ -31,9 +31,16 @@ body {
   grid-column: 0.5r 0.3fr 0.2fr;
   grid-gap: 32px;
 
+  &__area {
+    grid-area: glass;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__button {
-    margin-right: 40px;
-    margin-left: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     height: 47px;
     border: none;
 
@@ -44,6 +51,13 @@ body {
       &:hover {
         border: $lightblue 2px solid;
       }
+      &:focus {
+        border: $lightblue 2px solid;
+      }
+    }
+
+    &__counter {
+      position: absolute;
     }
 
     &--remove {
@@ -51,11 +65,26 @@ body {
       background: $oceanblue;
       color: $lightgrey;
       font-size: 14px;
+      &:hover {
+        text-decoration: $lightblue;
+      }
+      
     }
-    
   }
 
-  &__glass {
-    grid-area: glass;
+  &__counter {
+    font-size:112px;
+    text-align: center;
+    font-weight:500;
+    line-height: 131px;
+    padding-top:72px;
   }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+  }
+
+  
+
 }

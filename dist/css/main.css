@@ -332,7 +332,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.main {
+.glass {
   max-width: 280px;
   margin: 0px auto;
   display: -ms-grid;
@@ -340,30 +340,55 @@ body {
       grid-template-areas: "glass" "add"  "remove";
   grid-column: 0.5r 0.3fr 0.2fr;
   grid-gap: 32px; }
-  .main__button {
-    margin-right: 40px;
-    margin-left: 40px;
+  .glass__area {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: glass;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .glass__button {
+    padding-right: 40px;
+    padding-left: 40px;
     height: 47px;
     border: none; }
-    .main__button--add {
+    .glass__button--add {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
       grid-area: add;
       background: #FFFFFF;
       -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 5px 25px 0 rgba(0, 0, 0, 0.19);
               box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 5px 25px 0 rgba(0, 0, 0, 0.19); }
-      .main__button--add:hover {
+      .glass__button--add:hover {
         border: #2196F3 2px solid; }
-    .main__button--remove {
+      .glass__button--add:focus {
+        border: #2196F3 2px solid; }
+    .glass__button__counter {
+      position: absolute; }
+    .glass__button--remove {
       -ms-grid-row: 5;
       -ms-grid-column: 1;
       grid-area: remove;
       background: #3767AD;
       color: #F5E5E7;
       font-size: 14px; }
-  .main__glass {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: glass; }
+      .glass__button--remove:hover {
+        -webkit-text-decoration: #2196F3;
+                text-decoration: #2196F3; }
+  .glass__counter {
+    font-size: 112px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 131px;
+    padding-top: 72px; }
+  .glass__img {
+    position: absolute;
+    z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */

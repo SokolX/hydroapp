@@ -16,7 +16,7 @@
 
   <link rel="icon" type="image/ico" href="./assets/water-glass.svg" />
 
-  <link rel="mainfest" href="manifest.json" />
+  <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
   <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
@@ -27,15 +27,20 @@
 
 <body>
 
-  <main class="main">
+  <main class="glass">
 
-    <img class="main__glass" src="./assets/water-glass.svg" alt="A glass with water.">
-    <button class="main__button main__button--add">
+    <div class="glass__area">
+      <p class="glass__counter">0</p>
+      <img class="glass__img" src="./assets/water-glass.svg" alt="A glass with water." />
+    </div>
+
+    <button class="glass__button glass__button--add">
       add glass
     </button>
-    <button class="main__button main__button--remove">
+    <button class="glass__button glass__button--remove">
       remove glass
     </button>
+
   </main>
 
   <script src="js/main.js"></script>
