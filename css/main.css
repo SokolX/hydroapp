@@ -312,7 +312,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -337,7 +339,7 @@ body {
   margin: 0px auto;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "glass" "add"  "remove";
+      grid-template-areas: "glass" "add" "remove";
   grid-column: 0.5r 0.3fr 0.2fr;
   grid-gap: 32px; }
   .glass__area {
@@ -390,5 +392,76 @@ body {
   .glass__img {
     position: absolute;
     z-index: -1; }
+
+.header {
+  color: #FFFFFF; }
+
+.history {
+  max-width: 280px;
+  margin: 0px auto; }
+  .history__item {
+    list-style: none;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background: #FFFFFF; }
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 640px) {
+    .navigation__list--visible {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.navigation__item {
+  display: block;
+  margin: 0 16px; }
+  @media (max-width: 640px) {
+    .navigation__item {
+      margin: 16px; } }
+
+.navigation__link {
+  color: #2196F3;
+  text-decoration: none; }
+  .navigation__link:hover {
+    color: #E59400;
+    border-bottom: #E59400 solid 2px; }
+
+@media (min-width: 640px) {
+  .navigation__switcher {
+    display: none; } }
+
+@media (max-width: 640px) {
+  .navigation__switcher {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: #FFFFFF; } }
+
+.site-footer {
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  padding: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+  @media (max-width: 640px) {
+    .site-footer {
+      min-height: 48px;
+      top: unset;
+      bottom: 0; } }
 
 /*# sourceMappingURL=main.css.map */
