@@ -14,7 +14,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-
 const key = new Date().toISOString().slice(0, 10);
 const counter = document.querySelector('.glass__counter--js');
 const addButton = document.querySelector('.glass__button--add-js');
@@ -28,7 +27,7 @@ if (counter) {
   } else {
     counter.innerHTML = 0;
   }
-}
+
 
 addButton.addEventListener('click', (e) => {
 
@@ -44,9 +43,8 @@ removeButton.addEventListener('click', (e) => {
     localStorage.setItem(key, counter.innerHTML);
   }
 
-})
-  ;
-
+});
+}
 const dates = [];
 for (let i = 0; i < 6; i++) {
   if (localStorage.key(i)) {
@@ -57,4 +55,21 @@ for (let i = 0; i < 6; i++) {
 const glasses = [];
 for (let date of dates) {
   glasses.push(localStorage[date]);
+
 }
+
+if(localStorage.getItem.length !== 0) {
+  history.innerHTML = '<ul class="history--list-js">';
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const historyList = document.querySelector('.history--list-js');
+    const date = localStorage.key(i);
+    const counter = localStorage.getItem(date);
+    historyList.innerHTML += `<li class="history__item">
+    <h2>Date: ${date}</h2>
+    <h2>Glass: ${counter}<h2>
+    </li>`;
+  }
+
+} 
+

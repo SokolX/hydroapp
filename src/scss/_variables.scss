@@ -5,6 +5,12 @@ $lightblue: #2196F3;
 $lightgrey: #F5E5E7;
 $oceanblue: #3767AD;
 $white: #FFFFFF;
-
+$orange:#E59400;
 //fonts
 $robotFont: 'Roboto', sans-serif;
+
+//resolution for media query
+$telephone: 640px;
+
+//link style hover
+$hoverStyleLink: $orange solid 2px;  
