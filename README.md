@@ -1,4 +1,4 @@
-![Homepage screenshot](github/hydropp.png)
+![Homepage screenshot](github/hydroapp.png)
 
 # HydroApp - PWA
 Go to PWA -> [PWA hydroApp](https://https://sokolx.github.io/hydroapp/)
