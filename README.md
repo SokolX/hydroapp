@@ -1,7 +1,7 @@
 ![Homepage screenshot](github/hydroapp.png)
 
 # HydroApp - PWA
-Go to PWA -> [PWA hydroApp](https://https://sokolx.github.io/hydroapp/)
+Go to [hydroApp](https://sokolx.github.io/hydroapp/)
 
 ## What I've used here?
 - ▶ Semantic HTML5
