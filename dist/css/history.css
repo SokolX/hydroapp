@@ -309,17 +309,22 @@ template {
   display: none; }
 
 .history {
-  max-width: 280px;
-  padding-top: 50px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media (max-width: 640px) {
     .history {
       max-width: 100%; } }
   .history__item {
     list-style: none;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 16px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -331,6 +336,9 @@ template {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
+  .history__list {
+    padding: 0;
+    margin: 0; }
   .history__photo {
     height: 16px;
     width: 16px; }

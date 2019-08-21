@@ -22,14 +22,26 @@
   <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
   <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
   <meta name="theme-color" content="#2196F3" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-  <main class="glass">
+  <header class="site-header">
+    <nav class="navigation">
+      <ul class="navigation__list navigation__list--js">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Drink</a>
+        </li>
+        <li class="navigation__item">
+            <a class="navigation__link" href="history.html">History</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="glass">
     <div class="glass__area">
       <p class="glass__counter glass__counter--js">0</p>
       <img class="glass__img" src="./assets/water-glass.svg" alt="A glass with water." />
@@ -41,22 +53,9 @@
     <button class="glass__button glass__button--remove glass__button--remove-js">
       remove glass
     </button>
-
   </main>
 
-  <footer class="site-footer">
-    <nav class="navigation">
-      <ul class="navigation__list navigation__list--js">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Drink</a>
-        </li>
-        <li class="navigation__item">
-            <a class="navigation__link" href="history.html">History</a>
-        </li>
-      </ul>
-    </nav>
 
-  </footer>
 
   <script src="js/main.js"></script>
 
